@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://dateutil.readthedocs.org/
-  license: BSD
+  license: BSD 3-clause
   license_file: LICENSE
   summary: Extensions to the standard Python datetime module
   description: |
