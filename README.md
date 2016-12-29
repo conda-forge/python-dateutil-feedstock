@@ -7,11 +7,23 @@ Package license: BSD 3-clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Extensions to the standard Python datetime module
+Summary: Extensions to the standard Python datetime module.
 
 The dateutil module provides powerful extensions to the standard datetime
 module, available in Python.
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-dateutil-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-dateutil-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-dateutil-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-dateutil-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-dateutil-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-dateutil-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-dateutil/badges/version.svg)](https://anaconda.org/conda-forge/python-dateutil)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-dateutil/badges/downloads.svg)](https://anaconda.org/conda-forge/python-dateutil)
 
 Installing python-dateutil
 ==========================
@@ -68,18 +80,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-dateutil-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-dateutil-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-dateutil-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-dateutil-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-dateutil-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-dateutil-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-dateutil/badges/version.svg)](https://anaconda.org/conda-forge/python-dateutil)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-dateutil/badges/downloads.svg)](https://anaconda.org/conda-forge/python-dateutil)
 
 
 Updating python-dateutil-feedstock
