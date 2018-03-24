@@ -3,7 +3,7 @@ About python-dateutil
 
 Home: https://dateutil.readthedocs.org/
 
-Package license: BSD 3-clause
+Package license: BSD 3 Clause
 
 Feedstock license: BSD 3-Clause
 
