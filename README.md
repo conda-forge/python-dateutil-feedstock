@@ -16,12 +16,15 @@ module, available in Python.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/python-dateutil-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-dateutil-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/python-dateutil-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/python-dateutil-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-dateutil/badges/version.svg)](https://anaconda.org/conda-forge/python-dateutil)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-dateutil/badges/downloads.svg)](https://anaconda.org/conda-forge/python-dateutil)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--dateutil-green.svg)](https://anaconda.org/conda-forge/python-dateutil) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-dateutil.svg)](https://anaconda.org/conda-forge/python-dateutil) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-dateutil.svg)](https://anaconda.org/conda-forge/python-dateutil) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-dateutil.svg)](https://anaconda.org/conda-forge/python-dateutil) |
 
 Installing python-dateutil
 ==========================
