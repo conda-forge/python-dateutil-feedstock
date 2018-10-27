@@ -1,4 +1,4 @@
-{% set version = "2.7.4" %}
+{% set version = "2.7.5" %}
 
 package:
   name: python-dateutil
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-dateutil/python-dateutil-{{ version }}.tar.gz
-  sha256: 2f13d3ea236aeb237e7258d5729c46eafe1506fd7f8507f34730734ed8b37454
+  sha256: 88f9287c0174266bb0d8cedd395cfba9c58e87e5ad86b2ce58859bc11be3cf02
 
 build:
   number: 0
