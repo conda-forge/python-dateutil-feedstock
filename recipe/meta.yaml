@@ -1,35 +1,41 @@
+{% set name = "python-dateutil" %}
 {% set version = "2.8.2" %}
 
+
 package:
-  name: python-dateutil
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/python-dateutil/python-dateutil-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-dateutil-{{ version }}.tar.gz
   sha256: 0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
-    - setuptools_scm
+    - setuptools-scm
   run:
-    - python
-    - six
+    - python >=3.6
+    - six >=1.5
 
 test:
   imports:
     - dateutil
-    - dateutil.rrule
+    - dateutil.parser
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://dateutil.readthedocs.org/
-  license: BSD 3 Clause
+  license: Apache-2.0
   license_file: LICENSE
   summary: Extensions to the standard Python datetime module.
   description: |
