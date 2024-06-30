@@ -1,5 +1,5 @@
 {% set name = "python-dateutil" %}
-{% set version = "2.9.0post0" %}
+{% set version = "2.9.0.post0" %}
 
 
 package:
