@@ -154,4 +154,5 @@ Feedstock Maintainers
 * [@msarahan](https://github.com/msarahan/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@pganssle](https://github.com/pganssle/)
+* [@thewchan](https://github.com/thewchan/)
 

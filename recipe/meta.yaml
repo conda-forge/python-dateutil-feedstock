@@ -1,5 +1,5 @@
 {% set name = "python-dateutil" %}
-{% set version = "2.9.0" %}
+{% set version = "2.9.0.post0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-dateutil-{{ version }}.tar.gz
-  sha256: 78e73e19c63f5b20ffa567001531680d939dc042bf7850431877645523c66709
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/python-dateutil-{{ version }}.tar.gz
+  sha256: 37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3
 
 build:
   number: 0
@@ -17,11 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools-scm
+    - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - six >=1.5
 
 test:
@@ -32,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://dateutil.readthedocs.org/
@@ -49,3 +51,4 @@ extra:
     - pganssle
     - msarahan
     - ocefpaf
+    - thewchan
