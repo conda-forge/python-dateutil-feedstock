@@ -37,6 +37,11 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - 3.13.*
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+    script:
+      file: run_test.py
 
 about:
   license: Apache-2.0
