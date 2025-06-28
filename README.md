@@ -16,7 +16,6 @@ Documentation: https://dateutil.readthedocs.org/en/latest/
 The dateutil module provides powerful extensions to the standard datetime
 module, available in Python.
 
-
 Current build status
 ====================
 
