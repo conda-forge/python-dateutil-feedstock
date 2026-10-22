@@ -2,31 +2,32 @@
 schema_version: 1
 
 context:
-  version: 2.9.0.post0
+  version: 3.0.0
 
 package:
   name: python-dateutil
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/p/python-dateutil/python-dateutil-${{ version }}.tar.gz
-  sha256: 37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3
+  url: https://pypi.org/packages/source/p/python-dateutil/python_dateutil-${{ version }}.tar.gz
+  sha256: 7ebcb3c29a92f3ceafe79a7a48a5c45677e9e004bbeec5742ac0bbb00560b7a2
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
 
 requirements:
   host:
-    - pip
     - python ${{ python_min }}.*
+    - pip
     - setuptools
-    - setuptools-scm
+    - setuptools-scm <8.0
   run:
     - python >=${{ python_min }}
-    - six >=1.5
+    - six >=1.6
+    - python-tzdata
 
 tests:
   - python:
@@ -36,7 +37,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - 3.13.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
