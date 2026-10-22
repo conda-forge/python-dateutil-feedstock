@@ -20,14 +20,15 @@ build:
 
 requirements:
   host:
-    - pip
     - python ${{ python_min }}.*
+    - pip
     - setuptools
-    - setuptools-scm
+    - setuptools-scm <8.0
   run:
     - python >=${{ python_min }}
     - six >=1.6
-    - tzdata
+    - python-tzdata
+
 tests:
   - python:
       imports:
@@ -36,7 +37,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - 3.13.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
