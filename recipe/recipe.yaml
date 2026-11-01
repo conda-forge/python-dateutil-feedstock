@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 3.0.0
+  version: 4.0.0
 
 package:
   name: python-dateutil
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-dateutil/python_dateutil-${{ version }}.tar.gz
-  sha256: 7ebcb3c29a92f3ceafe79a7a48a5c45677e9e004bbeec5742ac0bbb00560b7a2
+  sha256: d7295ff14fdc0f92f662100bfb6c551d160ca090f2939f1ec5b9794265c03f06
 
 build:
   number: 0
@@ -21,14 +21,13 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
+    - hatchling >=1.27
+    - hatch-vcs >=0.4
+    - hatch-fancy-pypi-readme >=24.1
     - pip
-    - setuptools
-    - setuptools-scm <8.0
   run:
     - python >=${{ python_min }}
-    - six >=1.6
     - python-tzdata
-
 tests:
   - python:
       imports:
@@ -37,7 +36,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
   - requirements:
       run:
         - python ${{ python_min }}.*
