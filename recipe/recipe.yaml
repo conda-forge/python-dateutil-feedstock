@@ -27,7 +27,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - tzdata
+    - python-tzdata
 tests:
   - python:
       imports:
